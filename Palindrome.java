@@ -1,27 +1,22 @@
-import java.io.*;
-import java.util.Scanner;
-public class Palindrome {
-	public static void main(String args[]) {
-		Scanner sc=new Scanner(System.in);
-		String s,rev="";
-		int n;
-		char r;
-		//Scanner sc=new Scanner(System.in);
-		System.out.print("Enter the String: ");
-		s=sc.nextLine();
-		
-		n=s.length();
-		sc.close();
-		for(int i=n-1;i>=0;i--) {
-			r=s.charAt(i);
-			rev=rev+r;
+import java.util.*;
+public class Palindrome{
+	public static void main(String args[]){
+		Scanner P=new Scanner(System.in);
+		System.out.print("Enter String:");
+		String str=P.nextLine();
+		boolean palindrome=true;
+		int l=str.length();
+		str=str.toLowerCase();
+		for(int i=0;i<l;i++){
+			if(str.charAt(i)!=str.charAt(l-i-1)){
+				palindrome=false;
+			}
 		}
-		if(s.equals(rev)) {
+		if(palindrome){
 			System.out.println("Palindrome");
 		}
-		else {
+		else{
 			System.out.println("Not Palindrome");
 		}
 	}
-
 }
