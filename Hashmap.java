@@ -9,6 +9,9 @@ public class Hashmap {
         M.put("Science",80);
         M.put("English",70);
         M.put("Hindi",60);
-        System.out.println(M);
+        System.out.println(M.keySet());
+        System.out.println(M.clone());
+        System.out.println(M.containsKey("Maths"));
+        System.out.println(M.computeIfAbsent("Hello",k->1));
     }
 }
