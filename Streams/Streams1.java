@@ -22,6 +22,7 @@ public class Streams1 {
 		System.out.println(li1);
 		List<Integer> li2=li.stream().filter(i->i>=30).collect(Collectors.toList());
 		System.out.println(li2);
+		//map is used when you apply a specific condition
 		List<Integer> li3=li.stream().map(i->i*2).collect(Collectors.toList());
 		System.out.println(li3);
 	}
