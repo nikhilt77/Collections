@@ -17,7 +17,6 @@ public class hash {
             .stream()
             .max(Map.Entry.comparingByValue())
             .orElse(null);
-        System.out.println("Highest frequency element:" + max);
         if (max != null) {
             System.out.println("Highest Freq element:" + max.getKey());
             System.out.println("Frequency:" + max.getValue());
