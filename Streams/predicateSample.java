@@ -49,7 +49,7 @@ public class predicateSample {
                     p = num -> num < val1;
                     break;
                 case 5:
-                    System.out.println("Exiting and saving the ArrayList...");
+                    System.out.println("Exit and save");
                     saveArrayList(al, "arraylist.ser");
 
                     ArrayList<Integer> deserializedList = loadArrayList(
